@@ -2,18 +2,22 @@
     <div id = 'inputs'>
         <input v-model="name" placeholder="name">
         <button v-on:click= 'submit'>Submit</button>
-        <h3 weather = {{info}}></h3>
+        <app-right :weather = 'info'></app-right>
     </div>
 </template>
 <script>
 
 import axios from 'axios'
+import right from './right'
 export default {
 
     data: ()=> ({
         name: '',
         info: ''
     }),
+    components: {
+        'app-right': right
+    },
     methods:{
     submit: function () {
         axios
