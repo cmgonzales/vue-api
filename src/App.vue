@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <app-nav></app-nav>
     <app-head></app-head>
+  
   </div>
 </template>
 <script>
 import head from './components/head.vue'
-import nav from './components/nav'
+
 
 export default {
   name: 'App',
   components: {
     'app-head': head,
-    'app-nav': nav
+
+  
   }
 }
 </script>
