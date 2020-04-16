@@ -1,14 +1,23 @@
 <template>
-    <div id = 'inputs'>
+    <div id = 'inputs' class="fullpage-container">
+        <b-container>
+            <b-row>
+                <b-col>
         <input v-model="name" placeholder="name">
         <button v-on:click= 'submit'>Submit</button>
+                 </b-col>
+                 <b-col>
         <app-right :weather = 'info'></app-right>
+         </b-col>
+         </b-row>
+        </b-container>
     </div>
 </template>
 <script>
 
 import axios from 'axios'
 import right from './right'
+import 'fullpage-vue/src/fullpage.css' 
 export default {
 
     data: ()=> ({
