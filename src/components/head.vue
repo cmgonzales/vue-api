@@ -11,18 +11,20 @@
          </b-col>
          </b-row>
         </b-container>
+       
     </div>
 </template>
 <script>
 
 import axios from 'axios'
 import right from './right'
-import 'fullpage-vue/src/fullpage.css' 
+
 export default {
 
     data: ()=> ({
         name: '',
-        info: ''
+        info: '',
+
     }),
     components: {
         'app-right': right
@@ -36,7 +38,8 @@ export default {
         this.info = `${faren} F` 
         })
         }
-    }
+    },
+  
 }    
 
 </script>

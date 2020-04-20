@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <app-head></app-head>
+    <app-test></app-test>
   
   </div>
 </template>
 <script>
-import head from './components/head.vue'
-
+//import head from './components/head.vue'
+import test from './components/test'
 
 export default {
   name: 'App',
   components: {
-    'app-head': head,
+    //'app-head': head,
+    'app-test': test
   }
 }
 </script>
