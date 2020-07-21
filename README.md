@@ -1,1 +1,1 @@
-# coconuts project name
+project name
