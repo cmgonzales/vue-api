@@ -10,7 +10,7 @@
 export default {
     el: '#test',
     data: () => ({
-        see: true,
+        see: false,
   
       
     })
