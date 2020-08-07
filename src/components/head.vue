@@ -24,7 +24,6 @@ export default {
     data: ()=> ({
         name: '',
         info: '',
-
     }),
     components: {
         'app-right': right
