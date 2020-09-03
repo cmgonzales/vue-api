@@ -1,1 +1,1 @@
-project 
+Vue practice app 
